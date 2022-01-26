@@ -2,7 +2,7 @@
 
 from fontTools.ttLib import TTFont
 
-FONTS_URL = "https://raw.githubusercontent.com/izuk/agda-fonts/main"
+FONTS_URL = "https://cdn.jsdelivr.net/gh/izuk/agda-fonts@master"
 FONTS_SRC = "fonts/src"
 FONTS_BUILD = "fonts/build"
 
@@ -40,7 +40,7 @@ for path, confs in FONTS_CONFIG.items():
     css += [
       "@font-face {",
       "  font-family: \"%s\";" % path,
-      "  src: url(\"%s/%s/%s/%s.woff2\") format(\"woff2\");" % (FONTS_URL, FONTS_BUILD, path, conf["src"]),
+      "  src: url(\"%s/%s.woff2\") format(\"woff2\");" % (path, conf["src"]),
       "  font-weight: %s" % conf["font-weight"] if conf["font-weight"] else None,
       "  font-style: %s" % conf["font-style"] if conf["font-style"] else None,
       "}",
