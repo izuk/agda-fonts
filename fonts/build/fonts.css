@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "DejaVuSansMono";
+  src: url("https://raw.githubusercontent.com/izuk/agda-fonts/main/fonts/build/DejaVuSansMono/DejaVu Sans Mono Bold for Powerline.woff2") format("woff2");
+  font-weight: bold
+  font-style: normal
+}
+@font-face {
+  font-family: "DejaVuSansMono";
+  src: url("https://raw.githubusercontent.com/izuk/agda-fonts/main/fonts/build/DejaVuSansMono/DejaVu Sans Mono Bold Oblique for Powerline.woff2") format("woff2");
+  font-weight: bold
+  font-style: oblique
+}
+@font-face {
+  font-family: "DejaVuSansMono";
+  src: url("https://raw.githubusercontent.com/izuk/agda-fonts/main/fonts/build/DejaVuSansMono/DejaVu Sans Mono for Powerline.woff2") format("woff2");
+  font-weight: normal
+  font-style: normal
+}
+@font-face {
+  font-family: "DejaVuSansMono";
+  src: url("https://raw.githubusercontent.com/izuk/agda-fonts/main/fonts/build/DejaVuSansMono/DejaVu Sans Mono Oblique for Powerline.woff2") format("woff2");
+  font-weight: normal
+  font-style: oblique
+}
