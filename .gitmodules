@@ -1,0 +1,3 @@
+[submodule "src"]
+	path = fonts/src
+	url = https://github.com/powerline/fonts
