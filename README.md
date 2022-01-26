@@ -3,11 +3,11 @@ with Agda.
 
 To use, set this in the "Custom CSS" field:
 
-  https://cdn.jsdelivr.net/gh/izuk/agda-fonts@master/fonts/build/fonts.css
+> https://cdn.jsdelivr.net/gh/izuk/agda-fonts@master/fonts/build/fonts.css
 
 and use this font family:
 
-  DejaVuSansMono
+> DejaVuSansMono
 
 To rebuild the CSS and woff2 files:
 
