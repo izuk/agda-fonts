@@ -2,7 +2,10 @@
 
 from fontTools.ttLib import TTFont
 
-FONTS_URL = "https://cdn.jsdelivr.net/gh/izuk/agda-fonts@master"
+GIT_USER = "izuk"
+GIT_PROJECT = "agda-fonts"
+BASE_URL = "https://cdn.jsdelivr.net/gh"
+
 FONTS_SRC = "fonts/src"
 FONTS_BUILD = "fonts/build"
 
@@ -41,8 +44,8 @@ for path, confs in FONTS_CONFIG.items():
       "@font-face {",
       "  font-family: \"%s\";" % path,
       "  src: url(\"%s/%s.woff2\") format(\"woff2\");" % (path, conf["src"]),
-      "  font-weight: %s" % conf["font-weight"] if conf["font-weight"] else None,
-      "  font-style: %s" % conf["font-style"] if conf["font-style"] else None,
+      "  font-weight: %s;" % conf["font-weight"],
+      "  font-style: %s;" % conf["font-style"],
       "}",
     ]
 
@@ -50,3 +53,5 @@ css = filter(None, css)
 
 with open("%s/fonts.css" % FONTS_BUILD, "w") as f:
     f.write("\n".join(css))
+
+print("%s/%s/%s@master/%s/fonts.css" % (BASE_URL, GIT_USER, GIT_PROJECT, FONTS_BUILD))
